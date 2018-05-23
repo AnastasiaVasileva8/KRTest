@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
-project(Clientapp)
+project(Clcapp)
 
-add_executable(Clientapp main.cpp)
+add_executable(Clcapp main.cpp)
 
-target_link_libraries(Clientapp pthread)
+target_link_libraries(Clcapp pthread)
