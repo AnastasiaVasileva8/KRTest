@@ -52,14 +52,14 @@
 
 void main()
 {
-	setlocale(LC_ALL, "Rus");
+	
 	Spisok A;
 	int B, E;
-	std::vector<int> myvec = {};
+	std::vector<int> myvec = { 1, 2, 2, 3, 3, 4, 1, 3, 1, 5,6,6, 0};
 	Lref t; //Ðàáî÷èé óêàçàòåëü äëÿ ïåðåìåùåíèÿ 
 	// ïî ñïèñêó çàãîëîâî÷íûõ çâåíüåâ.
 	//Ïîñòðîåíèå ãðàôà è âûâîä åãî ñòðóêòóðû .
-	myvec =  { 1, 2, 2, 3, 3, 4, 1, 3, 1, 5,6,6, 0 };
+	//myvec =  { 1, 2, 2, 3, 3, 4, 1, 3, 1, 5,6,6, 0 };
 	//
 	////Ïîñòðîåíèå ãðàôà è âûâîä åãî ñòðóêòóðû Âèðòà.
 	A.MakeGraph(myvec);
@@ -71,9 +71,8 @@ void main()
 	{
 		(*t).Flag = TRUE; t = (*t).Next;
 	}
-	cout << "Ââåäèòå íà÷àëüíóþ âåðøèíó ïóòè: "; cin >> B;
-	cout << "Ââåäèòå êîíå÷íóþ âåðøèíó ïóòè : "; cin >> E;
-	cout << "Èñêîìûé ïóòü: ";
+	 cin >> B;
+	 cin >> E;
 	A.Path_Depth_First_Search(B, E); cout << endl;
 
 	//setlocale(LC_ALL, "Russian");
